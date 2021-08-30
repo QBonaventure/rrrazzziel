@@ -1,0 +1,103 @@
+@font-face {
+ font-family: "TwelveBySeven";
+ src: url("https://fearthec-cdn.s3.eu-west-3.amazonaws.com/fonts/twelvebysevealt-webfont.woff2") format("woff2"),
+        url("https://fearthec-cdn.s3.eu-west-3.amazonaws.com/fonts/twelvebysevealt-webfont.woff") format("woff");
+}
+
+@font-face {
+ font-family: "GenXFiveBlocker";
+ src: url("https://fearthec-cdn.s3.eu-west-3.amazonaws.com/fonts/genxfourblockerm-webfont.woff2") format("woff2"),
+        url("https://fearthec-cdn.s3.eu-west-3.amazonaws.com/fonts/genxfourblockerm-webfont.woff") format("woff");
+}
+
+@font-face {
+ font-family: "GenXFiveBlockerM";
+ src: url("https://fearthec-cdn.s3.eu-west-3.amazonaws.com/fonts/genxfourblockerm-webfont.woff2") format("woff2"),
+        url("https://fearthec-cdn.s3.eu-west-3.amazonaws.com/fonts/genxfourblockerm-webfontlockerm-webfont.woff") format("woff");
+}
+
+:root {
+  --ftc-red-color: 153, 27, 21;
+  --ftc-white-color: 233, 223, 192;
+  --ftc-black-color: 34, 34, 34;
+  --twitch-purple: 100, 65, 165;
+  --youtube-red: 255 0 0;
+  --discord-purple: 88, 101, 242;
+  --twitter-blue: 29 161 242;
+}
+
+body {
+background-color: rgb(var(--ftc-white-color));
+  font-family: "GenXFiveBlocker";
+  font-size: 32px;
+  font-weight: bold;
+}
+
+#body-header {
+  text-align: center;
+}
+
+#body-header h1 {
+  margin: 0;
+  font-size: 64px;
+}
+
+#body-header img {
+  width: 160px;
+  border-radius: 80px;
+}
+
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  background-color: rgb(var(--ftc-black-color));
+  vertical-align: middle;
+  list-style: none;
+  width: 250px;
+  border-radius: 10px;
+  margin: 10px auto;
+}
+
+li a {
+  background-color: rgb(var(--ftc-black-color));
+  display: inline-block;
+  width: 240px;
+  border-radius: 8px;
+  margin: 5px;
+  color: rgb(var(--ftc-red-color));
+  text-decoration: none;
+}
+
+li span {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  width: 190px;
+  top: -9px;
+}
+
+li#twitch-link:hover {
+  background-color: rgb(var(--twitch-purple));;
+}
+
+li#youtube-link:hover {
+  background-color: rgb(var(--youtube-red));;
+}
+
+li#discord-link:hover {
+  background-color: rgb(var(--discord-purple));;
+}
+
+li#twitter-link:hover {
+  background-color: rgb(var(--twitter-blue));;
+}
+
+li img {
+  width: 36px;
+  top: 5px;
+  position: relative;
+}
